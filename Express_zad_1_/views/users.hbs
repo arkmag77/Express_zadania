@@ -1,0 +1,27 @@
+<main>
+   
+   <h2>Users List</h2>
+
+    {{#each users}}
+
+       <div class="users">
+
+             <ul>
+                 <li>
+                    <hr>
+                    <h3>User's data:</h3>
+                    <p>Name: {{name}}</p>
+                    <p>Surname: {{username}}</p>
+                    <p>Website address: <a href= "http://{{website}}"> {{website}} </a> </p>
+                    <p>Address: {{address.street}}, {{address.suite}}, {{address.city}}, {{address.zipcode}}</p>               
+                </li>       
+            </ul>             
+                        
+        </div>         
+
+    {{/each}}   
+          
+
+        
+
+</main>
